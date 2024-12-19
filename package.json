@@ -1,0 +1,45 @@
+{
+  "name": "zipsterjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev2": "pnpm run build && pnpm start",
+    "dev": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "bin": {
+    "zipsterjs": "build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/archiver": "^6.0.3",
+    "@types/figlet": "^1.7.0",
+    "@types/inquirer": "^9.0.7",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.2",
+    "@types/tar": "^6.1.13",
+    "@types/unzipper": "^0.10.10",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "chalk": "4",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7",
+    "esm": "^3.2.25",
+    "figlet": "^1.8.0",
+    "inquirer": "^12.2.0",
+    "tar": "^6.2.1",
+    "unzipper": "^0.12.3",
+    "yocto-spinner": "^0.1.2"
+  }
+}
